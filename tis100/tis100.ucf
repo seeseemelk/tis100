@@ -1,0 +1,20 @@
+NET "clk_50mhz" LOC = P8;
+#NET "button" LOC = T6;
+NET "sck" LOC = K3;
+NET "ss" LOC = J4;
+NET "mosi" LOC = N4;
+NET "miso" LOC = N1;
+
+#Created by Constraints Editor (xc6slx16-ftg256-2) - 2021/06/29
+NET "clk_50mhz" TNM_NET = "clk_50mhz";
+TIMESPEC TS_clk_50mhz = PERIOD "clk_50mhz" 50 MHz HIGH 50 %;
+
+
+
+NET "ss" IOSTANDARD = LVCMOS25;
+
+
+NET "ana_mosi" LOC = T12;
+NET "ana_miso" LOC = R12;
+NET "ana_sck" LOC = T14;
+NET "ana_ss" LOC = T13;
