@@ -17,15 +17,12 @@ As the official TIS-100 ISA does not contain any bytecode, a custom bytecode
 format had to be developed.
 Each instruction comes in three formats:
 
-|----|----------------------|
 |Type| Format               |
 |----|----------------------|
 | A  | `IIIIDDDSSSxxxxxxxx` |
 | B  | `IIIIDDDLLLLLLLLLLL` |
 | C  | `IIIIxxxAAAAAAAAAAA` |
-|----|----------------------|
 
-|-----------|----------------------|
 | Character | Meaning              |
 |-----------|----------------------|
 | `I`       | Instruction opcode   |
@@ -34,13 +31,12 @@ Each instruction comes in three formats:
 | `A`       | Address              |
 | `L`       | Literal              |
 | `x`       | Unused (don't care)  |
-|-----------|----------------------|
 
 ## Registers
 Each node contains 8 addressable registers, namely:
 
-|-------|--------------|
 | Index | Name         |
+|-------|--------------|
 | `000` | NIL          |
 | `001` | ACC          |
 | `010` | ANY          |
@@ -49,13 +45,12 @@ Each node contains 8 addressable registers, namely:
 | `101` | EAST / RIGHT |
 | `110` | NORTH / UP   |
 | `111` | SOUTH / DOWN |
-|-------|--------------|
 
 ## Opcodes
 There are a total of 16 opcodes:
 
-|--------|-------------------|
 | Opcode | Assembly          |
+|--------|-------------------|
 | `0000` | `ADD <SRC>`       |
 | `0001` | `ADD <LIT>`       |
 | `0010` | `SUB <SRC>`       |
@@ -72,4 +67,3 @@ There are a total of 16 opcodes:
 | `1101` | `JNZ <ADDR>`      |
 | `1110` | `JGZ <ADDR>`      |
 | `1111` | `JLZ <ADDR>`      |
-|--------|-------------------|
