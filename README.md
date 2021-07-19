@@ -3,6 +3,8 @@ This is an FPGA implementation of the TIS-100. The repository includes an Java
 IDE which can visualise the state of the TIS-100.
 The IDE uses an FT-232 in bitbang mode in order to talk to the TIS-100.
 
+![Image of TisIDE](tiside/screenshot.png)
+
 # Architecture
 The system contains 12 T21 nodes connected in a 4x3 grid.
 
