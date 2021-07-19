@@ -1,0 +1,21 @@
+plugins {
+	id 'application'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'net.java.dev.jna:jna-platform:5.8.0'
+
+	testImplementation 'org.junit.jupiter:junit-jupiter:5.7.1'
+}
+
+application {
+	mainClass = 'be.seeseemelk.tiside.App'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
